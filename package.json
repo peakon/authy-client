@@ -30,6 +30,9 @@
   "bin": {
     "authy": "dist/src/bin/cli.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "changelog": "github_changelog_generator --no-issues --header-label='# Changelog' --future-release=v$npm_config_future_release && sed -i '' -e :a -e '$d;N;2,4ba' -e 'P;D' CHANGELOG.md",
     "coverage": "nyc --reporter=html --reporter=text npm test",
